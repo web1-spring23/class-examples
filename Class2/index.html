@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Essential HTML5 Elements</title>
+  </head>
+  <body>
+    <h1>This is the main heading - an H1</h1>
+    <h2>H2 Heading</h2>
+    <h3>H3 Heading</h3>
+    <h4>H4 heading</h4>
+    <h5>H5 heading</h5>
+    <h6>H6 Heading</h6>
+    <p>
+      A normal paragraph.
+      <b>Now we are bolding something.</b>
+      <i>What about italics?</i>
+      <s>Strike it out</s>
+      Why don't you <a href="http://www.google.com">Google it?</a>
+      <br />
+      <img src="https://via.placeholder.com/350.png" />
+    </p>
+    <table>
+      <tr>
+        <th>Plan name</th>
+        <th>Cost</th>
+        <th>Benefits</th>
+      </tr>
+      <tr>
+        <td>Basic</td>
+        <td>Free</td>
+        <td>1 Account</td>
+      </tr>
+      <tr>
+        <td>Premium</td>
+        <td>$10/month</td>
+        <td>3 Account</td>
+      </tr>
+      <tr>
+        <td>Enterprise</td>
+        <td>$50/month</td>
+        <td>Unlimited Accounts</td>
+      </tr>
+    </table>
+    <h2>How to Make a Sandwich</h2>
+    <h3>Ingredients</h3>
+    <ul>
+      <li>Bread</li>
+      <li>Peanut Butter</li>
+      <li>Jelly</li>
+    </ul>
+    <h3>Instructions</h3>
+    <ol>
+      <li>Get two pieces of bread.</li>
+      <li>Using a butter knife, slather peanut butter on one side of piece</li>
+      <li>Then, slather jelly on one side of the other piece</li>
+      <li>combine pieces of bread.</li>
+    </ol>
+
+    <details>
+        <summary>Additional Sandwich tips</summary>
+        Cut the bread on a diagonol for a fancier look.
+    </details>
+
+    <h2>Tell me about yourself</h2>
+    <form>
+      <label for="name">What is your name?</label>
+      <input type="textbox" id="name" name="name" />
+      <br />
+      <label for="color">What is your favorite color?</label>
+      <input type="color" id="color" name="color" />
+      <br />
+      <label for="secret">Tell me a secret</label>
+      <input type="password" id="secret" name="secret" />
+
+      <fieldset>
+        <legend>Are you a student?</legend>
+
+        <input type="radio" id="student-yes" name="student" value="yes" />
+        <label for="student-yes">Yes</label>
+
+        <input type="radio" name="student" id="student-no" value="no" />
+        <label for="student-no">No</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Which of the following books have you read?</legend>
+
+        <input type="checkbox" name="books" id="books-catcher" name="catcher" />
+        <label for="books-catcher">Catcher in the Rye</label>
+        <input
+          type="checkbox"
+          name="books"
+          id="books-mockingbird"
+          name="mockingbird"
+        />
+        <label for="books-mockingbird">To Kill a Mockingbird</label>
+        <input
+          type="checkbox"
+          name="books"
+          id="books-outsiders"
+          name="outsiders"
+        />
+        <label for="books-outsiders">The Outsiders</label>
+      </fieldset>
+      <br /> 
+
+      <label for="pet-select">Choose a pet:</label>
+
+      <select name="pets" id="pet-select">
+        <option value="">--Please choose an option--</option>
+        <option value="dog">Dog</option>
+        <option value="cat">Cat</option>
+        <option value="hamster">Hamster</option>
+        <option value="parrot">Parrot</option>
+        <option value="spider">Spider</option>
+        <option value="goldfish">Goldfish</option>
+      </select>
+      <br />
+      <label for="story">Tell me your life story</label><br>
+      <textarea id="story" rows="15" cols="50"> </textarea>
+      <br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
